@@ -1,0 +1,36 @@
+.navigation {
+    position: fixed;
+    width: 100px;
+    height: 600px;
+    background-color: #00000055;
+    right: 15px;
+    top: 50px;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation__button {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    background-color: #FFFFFF00;
+    transition: all .15s;
+    border-bottom: #FFFFFF55 solid 2px;
+}
+
+.navigation__button:last-child {
+    border-bottom: #FFFFFF00 solid 2px;
+}
+
+.navigation__button-active {
+    background-color: #FFFFFF44 !important;
+}
+
+.navigation__button:hover {
+    background-color: #FFFFFF22;
+}

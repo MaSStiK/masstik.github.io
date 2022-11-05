@@ -1,0 +1,53 @@
+main {
+    width: 100%;
+    /* height: 131.4vw; */
+    position: relative;
+}
+
+.web-work {
+    width: 100%;
+    height: 65.7vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+    background-color: #000000;
+}
+
+.web-work__site-container {
+    width: 32.6vw;
+    height: 32.6vw;
+}
+
+.web-work__site {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.photoshop-work {
+    width: 100%;
+    height: 65.7vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+    background-color: #000000;
+}
+
+.photoshop-work__art-container {
+    width: 32.6vw;
+    height: 32.6vw;
+}
+
+.photoshop-work__art {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}

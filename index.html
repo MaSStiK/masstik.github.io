@@ -1,25 +1,81 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <!-- <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MaSStiK</title>
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/navigation.css">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/main.css">
 </head>
 <body>
-    <svg viewBox="0 0 960 300">
-        <symbol id="s-text">
-            <text text-anchor="middle" x="50%" y="80%">MaSStiK</text>
-        </symbol>
-    
-        <g class = "g-ants">
-            <use xlink:href="#s-text" class="text-copy"></use>
-            <use xlink:href="#s-text" class="text-copy"></use>
-            <use xlink:href="#s-text" class="text-copy"></use>
-            <use xlink:href="#s-text" class="text-copy"></use>
-            <use xlink:href="#s-text" class="text-copy"></use>
-        </g>
-    </svg>
+    <nav class="navigation">
+        <a href="#header" class="navigation__button navigation__button-active" id="navigation__button-main">Top</a>
+        <a href="#web" class="navigation__button" id="navigation__button-web">Web</a>
+        <a href="#photoshop" class="navigation__button" id="navigation__button-photoshop">Photoshop</a>
+        <a href="#" class="navigation__button" id="navigation__button-game">Game</a>
+        <a href="#" class="navigation__button" id="navigation__button-bot">Bot</a>
+        <a href="#" class="navigation__button" id="navigation__button-bottom">Bottom</a>
+    </nav>
+    <header>
+        <div class="header-container" id="header">
+            <p class="header-container__text"></з> 
+            <p class="header-container__title">MaSStiK</p>
+        </div>
+    </header>
+    <main>
+        <div class="web-work" id="web">
+            <div class="web-work__site-container">
+                <div class="web-work__site" style="background-image: url(./assets/images/web/web1.png);"></div>
+            </div>
+            <div class="web-work__site-container">
+                <div class="web-work__site" style="background-image: url(./assets/images/web/web2.png);"></div>
+            </div>
+            <div class="web-work__site-container">
+                <div class="web-work__site" style="background-image: url(./assets/images/web/web3.png);"></div>
+            </div>
+            <div class="web-work__site-container">
+                <div class="web-work__site" style="background-image: url(./assets/images/web/web4.png);"></div>
+            </div>
+            <div class="web-work__site-container">
+                <div class="web-work__site" style="background-image: url(./assets/images/web/web5.png);"></div>
+            </div>
+            <div class="web-work__site-container">
+                <div class="web-work__site" style="background-image: url(./assets/images/web/web6.png);"></div>
+            </div>
+        </div>
+        <div class="photoshop-work" id="photoshop">
+            <div class="photoshop-work__art-container">
+                <div class="photoshop-work__art" style="background-image: url(./assets/images/photoshop/photoshop1.jpg);"></div>
+            </div>
+            <div class="photoshop-work__art-container">
+                <div class="photoshop-work__art" style="background-image: url(./assets/images/photoshop/photoshop2.jpg);"></div>
+            </div>
+            <div class="photoshop-work__art-container">
+                <div class="photoshop-work__art" style="background-image: url(./assets/images/photoshop/photoshop3.jpg);"></div>
+            </div>
+            <div class="photoshop-work__art-container">
+                <div class="photoshop-work__art" style="background-image: url(./assets/images/photoshop/photoshop4.jpg);"></div>
+            </div>
+            <div class="photoshop-work__art-container">
+                <div class="photoshop-work__art" style="background-image: url(./assets/images/photoshop/photoshop5.jpg);"></div>
+            </div>
+            <div class="photoshop-work__art-container">
+                <div class="photoshop-work__art" style="background-image: url(./assets/images/photoshop/photoshop6.jpg);"></div>
+            </div>
+            <!-- <div class="photoshop-work__art-container"> Две вкладки
+                <div class="photoshop-work__art" style="background-image: url(./assets/images/photoshop/photoshop7.png);"></div>
+            </div>
+            <div class="photoshop-work__art-container">
+                <div class="photoshop-work__art" style="background-image: url(./assets/images/photoshop/photoshop8.jpg);"></div>
+            </div>
+            <div class="photoshop-work__art-container">
+                <div class="photoshop-work__art" style="background-image: url(./assets/images/photoshop/photoshop9.png);"></div>
+            </div> -->
+        </div>
+    </main>
+    <script src="./script/main.js"></script>
 </body>
 </html>

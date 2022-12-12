@@ -22,6 +22,9 @@
     background-color: #FFFFFF00;
     transition: all .15s;
     border-bottom: #FFFFFF55 solid 0.2vh;
+    background-size: 33%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .navigation__button:last-child {

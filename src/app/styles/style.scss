@@ -1,0 +1,52 @@
+@use "variables/vars.scss";
+
+@use "text.scss";
+@use "button.scss";
+@use "input.scss";
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+    list-style-type: none;
+    scroll-behavior: smooth;
+    color-scheme: light;
+
+    transition: .2s all ease-out;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: vars.$bg-primary;
+}
+
+main {
+    flex: 1;
+}
+
+article {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: vars.$gap-article;
+}
+
+section {
+    width: vars.$content-width;
+    padding: 0 vars.$gap-medium;
+    margin: 0 auto;
+}
+
+.flex-row {
+    display: flex;
+    gap: vars.$gap-small;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    gap: vars.$gap-small;
+}

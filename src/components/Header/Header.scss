@@ -1,0 +1,34 @@
+@use "@/app/styles/variables/vars.scss";
+@use "@/app/styles/variables/text.scss";
+@use "@/app/styles/variables/button.scss";
+
+header {
+    width: vars.$content-width;
+    padding: vars.$gap-large
+             vars.$gap-medium
+             vars.$gap-small
+             vars.$gap-medium;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: vars.$gap-large;
+    margin: 0 auto;
+
+    ul {
+        display: flex;
+        gap: vars.$gap-large;
+
+        li a {
+            color: text.$gray;
+
+            @include button.hover() {
+                color: text.$white;
+            }
+
+            &.active {
+                font-weight: 500;
+                color: text.$white;
+            }
+        }
+    }
+}

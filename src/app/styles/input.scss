@@ -1,0 +1,55 @@
+@use "./variables/vars.scss";
+@use "./variables/text.scss";
+
+/* Основной стиль инпута */
+input[type=text] {
+    display: block;
+    height: 48px;
+    padding: 14px 20px;
+
+    color: text.$white;
+    font-size: 14px;
+    text-decoration: none;
+
+    background-color: vars.$bg-primary;
+    outline: none;
+    border: none;
+}
+
+input[type=text]::placeholder {
+    font-size: 14px;
+    color: text.$gray;
+}
+
+.input-wrapper {
+    height: 48px;
+    padding: 0 20px;
+    display: flex;
+    gap: vars.$gap-tiny;
+
+    position: relative; 
+    overflow: hidden;
+    background-color: vars.$bg-primary;
+
+    // Убираем боковой padding т.к. он у wrapper
+    input[type=text] {
+        height: 100%;
+        width: 100%;
+        padding: 14px 0;
+    }
+
+    .input-image {
+        width: 20px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    // img {
+        // position: absolute;
+        // top: 50%;
+        // right: 20px;
+        // translate: 0 -50%;
+    // }
+}

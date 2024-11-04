@@ -1,0 +1,17 @@
+@use "@/app/styles/variables/vars.scss";
+
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+    gap: vars.$gap-tiny;
+
+    .logo {
+        width: 16px;
+        height: 16px;
+        position: relative;
+    }
+
+    h3 {
+        font-weight: 700;
+    }
+}

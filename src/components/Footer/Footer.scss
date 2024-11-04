@@ -1,0 +1,46 @@
+@use "@/app/styles/variables/vars.scss";
+
+footer {
+    width: 100%;
+    padding: vars.$gap-large;
+    border-top: vars.$border-style vars.$border-color;
+    margin-top: 145px;
+}
+
+/* Ограничиваем ширину внутренней части footer */
+.footer-inner {
+    width: vars.$content-width;
+    padding: 0 vars.$gap-medium;
+    margin: 0 auto;
+
+    & > .flex-row {
+        justify-content: space-between;
+    }
+
+    .footer__copyright {
+        text-align: center;
+        margin-top: 48px;
+    }
+}
+
+.footer__left {
+    gap: vars.$gap-small;
+
+    .flex-row {
+        gap: vars.$gap-medium;
+    }
+}
+
+.footer__right {
+    gap: vars.$gap-small;
+
+    .flex-row {
+        gap: vars.$gap-tiny;
+
+        .footer__right-media {
+            width: 32px;
+            height: 32px;
+            position: relative;
+        }
+    }
+}

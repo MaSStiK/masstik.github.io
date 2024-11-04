@@ -1,0 +1,17 @@
+// Цвета задних фонов блоков
+$bg-primary: #282C33;
+
+// border
+$border-style: 1px solid;
+$border-color: #ABB2BF;
+
+// Отступы
+$gap-article: 106px;
+$gap-large: 32px;
+$gap-medium: 24px;
+$gap-small: 16px;
+$gap-tiny: 8px;
+
+// Ширина контента
+$content-max-width: 1024px + $gap-small * 2; // Ширина контента и два отступа по бокам
+$content-width: min($content-max-width, 100%);

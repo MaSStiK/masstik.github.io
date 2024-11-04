@@ -1,0 +1,18 @@
+@use "@/app/styles/variables/vars.scss";
+
+.home-info {
+    margin-top: 62px;
+    
+    .home-info__inner {
+        width: min(558px, 100%);
+
+        p {
+            width: min(463px, 100%);
+            margin-top: vars.$gap-large;
+        }
+
+        button {
+            margin-top: vars.$gap-medium;
+        }
+    }
+}

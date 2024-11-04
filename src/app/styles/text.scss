@@ -1,0 +1,63 @@
+
+@use "./variables/vars.scss";
+@use "./variables/text.scss";
+
+* {
+    font-weight: 400;
+    font-size: text.$p;
+    color: text.$white;
+    text-decoration: none;
+    word-break: break-word;
+}
+
+/* Стили для текста */
+h1, .h1 {
+    font-size: text.$h1;
+    font-weight: 600;
+}
+
+h2, .h2 {
+    font-size: text.$h2;
+    font-weight: 500;
+}
+
+h3, .h3 {
+    font-size: text.$h3;
+    font-weight: 600;
+}
+
+p, .p {
+    font-size: text.$p;
+    font-weight: 400;
+    white-space: pre-wrap;
+}
+
+strong, .strong {
+    font-weight: 600;
+}
+
+/* Лейбл инпута */
+label {
+    font-size: text.$p;
+}
+
+
+/* Стили для цвета текста */
+.text-white {
+    color: text.$white;
+}
+
+.text-gray {
+    color: text.$gray;
+}
+
+.text-primary {
+    color: text.$primary;
+}
+
+// Тег текст с особым цветом
+text-primary {
+    font-size: inherit;
+    font-weight: inherit;
+    color: text.$primary;
+}

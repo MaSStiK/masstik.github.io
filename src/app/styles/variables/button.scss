@@ -1,0 +1,45 @@
+@use "vars";
+@use "sass:color";
+
+// Высота кнопки
+$height: 37px;
+$img-size: 20px;
+
+// Отступы внутри кнопки
+$padding: 16px;
+$gap: 8px;
+
+// Цвета кнопок
+$bg: (
+    gray-bg: #ABB2BF, // По умолчанию
+    primary-bg: #C778DD,
+);
+
+// mixin эффект при наведении на кнопку
+@mixin hover() {
+    // Наведение на пк
+    @media (hover: hover) {
+        &:hover, &:focus-visible {
+            @content;
+        }
+    }
+
+    // Клик на телефоне
+    @media (hover: none) {
+        &:active {
+            @content;
+        }
+    }
+}
+
+
+// mixin создание кнопки с эффектами наведения
+@mixin button-style($border-color, $text-color) {
+    background-color: transparent;
+    color: $text-color;
+    border: vars.$border-style $border-color;
+
+    @include hover() {
+        background-color: color.adjust($border-color, $alpha: -0.8);
+    }
+}

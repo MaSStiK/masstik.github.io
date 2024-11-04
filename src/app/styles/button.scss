@@ -1,0 +1,49 @@
+@use "./variables/vars.scss";
+@use "./variables/text.scss";
+@use "./variables/button.scss";
+@use "sass:map";
+
+/* Обычная кнопка (Серая) */
+button,
+button.gray {
+    width: fit-content;
+    min-height: button.$height;
+    padding: 8px button.$padding;
+
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // gap: button.$gap;
+
+    outline: none;
+    border: none;
+
+    overflow: hidden;
+    user-select: none;
+    cursor: pointer;
+
+    font-family: "Fira Code", "Fira Code Fallback";
+    font-weight: 500;
+    font-size: text.$p;
+    text-decoration: none;
+
+    // Картинка в кнопке
+    // img {
+    //     width: button.$img-size;
+    //     height: button.$img-size;
+    // }
+
+    // По умолчанию кнопка серая
+    @include button.button-style(
+        map.get(button.$bg, gray-bg),
+        text.$gray
+    );
+}
+
+// Акцентная кнопка
+button.primary {
+    @include button.button-style(
+        map.get(button.$bg, primary-bg),
+        text.$white
+    );
+}
